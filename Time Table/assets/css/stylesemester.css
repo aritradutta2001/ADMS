@@ -1,0 +1,220 @@
+
+/*For Table*/
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #customers td,
+  #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  #customers tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+  #customers tr:hover {
+    background-color: #ddd;
+  }
+
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: blue;
+    color: white;
+  }
+
+/*For Heading*/
+  h1{
+    font-size: 3vw; /* make our h1 tag larger */
+        font-family: sans-serif; /* choosing our font */
+        background: linear-gradient(to right, rgba(227, 183, 227, 0) 0%, rgba(225, 232, 255, 0.5) 20%, rgba(200, 70, 161, 0) 61%), linear-gradient(rgba(160, 111, 212, 0.964) 52%, rgb(188, 113, 235) 60%, rgb(120, 122, 230) 61%); /* you can change the colors based on your preference */
+        background-clip: text; /*it defines how far the background should extend within an element, here we set it to text */
+        -webkit-background-clip: text; /*for browsers compatibility */
+        -webkit-text-fill-color: transparent; /* specifies the fill color of text characters. We use transparent to use the background as our text fill  */
+        animation: wave 2000ms ease alternate infinite;
+        transition: all 0.4s ease;
+      }
+      @keyframes wave {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 50vw 10px;
+        }
+      }
+/*For Button and Background*/
+  html,
+  body {
+      
+      background: rgb(2, 5, 57)
+  }
+  
+
+.glow-on-hover {
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+/* Responsive Media Query */
+@media (max-width: 1240px) {
+    .sidebar{
+      width: 60px;
+    }
+    .sidebar.active{
+      width: 220px;
+    }
+    .home-section{
+      width: calc(100% - 60px);
+      left: 60px;
+    }
+    .sidebar.active ~ .home-section{
+      /* width: calc(100% - 220px); */
+      overflow: hidden;
+      left: 220px;
+    }
+    .home-section nav{
+      width: calc(100% - 60px);
+      left: 60px;
+    }
+    .sidebar.active ~ .home-section nav{
+      width: calc(100% - 220px);
+      left: 220px;
+    }
+  }
+  @media (max-width: 1150px) {
+    .home-content .sales-boxes{
+      flex-direction: column;
+    }
+    .home-content .sales-boxes .box{
+      width: 100%;
+      overflow-x: scroll;
+      margin-bottom: 30px;
+    }
+    .home-content .sales-boxes .top-sales{
+      margin: 0;
+    }
+  }
+  @media (max-width: 1000px) {
+    .overview-boxes .box{
+      width: calc(100% / 2 - 15px);
+      margin-bottom: 15px;
+    }
+  }
+  @media (max-width: 700px) {
+    nav .sidebar-button .dashboard,
+    nav .profile-details .student_name,
+    nav .profile-details i{
+      display: none;
+    }
+    .home-section nav .profile-details{
+      height: 50px;
+      min-width: 40px;
+    }
+    .home-content .sales-boxes .sales-details{
+      width: 560px;
+    }
+  }
+  @media (max-width: 550px) {
+    .overview-boxes .box{
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .sidebar.active ~ .home-section nav .profile-details{
+      display: none;
+    }
+  }
+    @media (max-width: 400px) {
+    .sidebar{
+      width: 0;
+    }
+    .sidebar.active{
+      width: 60px;
+    }
+    .home-section{
+      width: 100%;
+      left: 0;
+    }
+    .sidebar.active ~ .home-section{
+      left: 60px;
+      width: calc(100% - 60px);
+    }
+    .home-section nav{
+      width: 100%;
+      left: 0;
+    }
+    .sidebar.active ~ .home-section nav{
+      left: 60px;
+      width: calc(100% - 60px);
+    }
+  }
+  
+  /*for update button*/
+  .btn{
+    cursor: pointer;
+  }
+  

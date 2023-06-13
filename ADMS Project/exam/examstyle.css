@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700|Lobster');
+
+/* 
+font-family: 'Lobster', cursive;
+font-family: 'Bitter', serif;
+*/
+
+html,body,div,h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    /* background: url('exam.jpg'); */
+    
+    background-size: contain; 
+}
+body {
+    background: gray;
+    width: 96%;
+    margin: 1px auto;
+    font-family: 'Bitter', serif;
+    color: white;
+    font-size: 100%;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    box-shadow: 0px 0px 5px 3px black;
+   /* background: rgba(33,35,32,0.5); */
+}
+/* styling the questions containers */
+.info {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 1.3em;
+    color: darkgrey;
+}
+.wraper {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+.group{
+    padding: 1em;
+    border-bottom: 1px solid darkgray;
+    
+}
+.inner-group {
+    justify-content: space-around;
+    padding: .5em 1em;
+}
+h2 {
+    text-indent: -13px;
+    margin: 0.3em 0;
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+    font-size: 1.5em;
+    color: darkgray;
+}
+/* styling text field */
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+input[type="text"] {
+    display: block;
+    margin-top: 0.5em;
+    background: rgb(33,32,35);
+    height: 2.2em;
+    width: 30%;
+    border: 1px solid black;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+input[type="text"]:focus {
+    background: black;
+    border: 1px solid darkgray;
+    width: 100%;
+    color: white;
+}
+input[type="text"]:hover {
+    border: 1px solid gray;
+}
+select {
+    width: 60%;
+    background: rgb(33,32,35);
+    height: 1.7em;
+    color: aqua;
+}
+select:hover {
+    cursor: pointer;
+    border: 1px solid darkgray;
+}
+/* Styling the result field */
+#total_result {
+    display: block;
+    text-align: center;
+}
+#final-result {
+    display: block;
+    height: 15em;
+    margin: 0.1em;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+#result_1 , #result_2 , #result_3 {
+    height: 15em;
+    width: 33%;
+    padding: 1.5em;
+}
+label[for="estimate-result"] {
+    color: black;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgb(33,32,35);
+}
+.second-container {
+    padding: 1em;
+}
+/* Styling the button */
+input[type="submit"] {
+    background: linear-gradient(top,rgb(33,32,35),rgb(0,0,0));
+    background: -webkit-linear-gradient(top,rgb(33,32,35),rgb(0,0,0));
+    background: -moz-linear-gradient(top,rgb(33,32,35),rgb(0,0,0));
+    padding: .3em 1.7em;
+    border: 1px solid rgb(33,32,35);
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 1.8em;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(top,rgb(0,0,0),rgb(33,32,35),rgb(0,0,0));
+    background: -webkit-linear-gradient(top,rgb(0,0,0),rgb(33,32,35),rgb(0,0,0));
+    background: -moz-linear-gradient(top,rgb(0,0,0),rgb(33,32,35),rgb(0,0,0));
+    background: -o-linear-gradient(top,rgb(0,0,0),rgb(33,32,35),rgb(0,0,0));
+    border-radius: 8px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    color: aqua;
+    text-shadow: 0px 0px 1px black,1px 1px 2px black,2px 2px 3px black;
+    cursor: pointer;
+    box-shadow: -2px 0px 5px black, 2px 0px 5px black;
+}
+input[type="submit"]:active {
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    position: relative;
+    top: 2px;
+}
+#degr,#cong {
+    font-family: "New Times Roman", serif;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transform: scale(0,0);
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -o-transform: scale(0,0);
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -o-transform-origin: center;
+    text-align: center;
+    overflow: hidden;
+}
+#show_result {
+    font-size: 3em;
+    color: aqua;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px black, 2px 2px 2px black,3px 3px 3px black, 4px 4px 4px black,5px 5px 5px black, 6px 6px 6px black, 7px 7px 7px black;
+    overflow: hidden;
+}
+#result_side_1 {
+    padding: 2em 0 0 2.5em;
+    overflow: hidden;
+}
+#name, #age, #place {
+    text-align: left;
+    color: aqua;
+    font-size: 1.9em;
+    font-family: "New Times Roman", serif;
+    margin-bottom: 0.2em;
+    text-shadow: 1px 1px 1px black,2px 2px 2px black,3px 3px 3px black;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transform: translateX(-2000%);
+  -webkit-transform: translateX(-2000%);
+    -moz-transform: translateX(-2000%);
+    -o-transform: translateX(-2000%);
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -o-transform-origin: left;
+    transform-origin: left;
+}
+
+#pname, #page, #pplace {
+    margin-left: 0.4em;
+    color: black;
+    font-weight: 800;
+    text-shadow: 1.5px 1.5px 1.5px rgb(33,32,35), 2.5px 2.5px 2.5px rgb(33,32,35);
+}
+#result_side_2 {
+    padding: .5em;
+    overflow: hidden;
+}
+#lineone, #linetwo, #linethree {
+    text-align: left;
+    margin-bottom: .2em;
+    font-family: 'Bitter', serif;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+    text-shadow: 1.5px 1.5px 1.5px rgb(33,35,32),2.5px 2.5px 2.5px rgb(33,35,32); 
+    transition: all 1s;
+    transform: translateX(1000%);
+  -webkit-transform: translateX(1000%);
+    -moz-transform: translateX(1000%);
+    -o-transform: translateX(1000%);
+    -webkit-transform-origin: right;
+    -moz-transform-origin: right;
+    -o-transform-origin: right;
+    transform-origin: right;
+}
+#crid {
+    margin-left: .5em;
+    font-size: 150%;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    transition: all 1s;
+}
+#lineone::first-letter, #linetwo::first-letter {
+    color: black;
+    font-size: 140%;
+}
+@keyframes aut{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

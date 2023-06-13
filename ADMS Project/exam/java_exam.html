@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text your Knowlege [Test-Project]</title>
+        <link rel="stylesheet" href="examstyle.css">
+    </head>
+    <body onload="naming()">
+        <div class="main-container"> <!-- Main container -->
+            <p class="info">Welcome to the examination Page</p>
+        <form id="quest-f" >
+            <div class="wraper">
+                <div class="group">
+                    <div class="inner-group">
+                        <h2> Question I</h2>
+                        <label for="countries">How many Number of primitive data types in Java are</label><br>
+                        <p><input type="radio" name="Q_countries" value="5" id="country_1" />A).. 8</p>
+                        <p><input type="radio" name="Q_countries" value="0" id="country_2" />B).. 7</p>
+                        <p><input type="radio" name="Q_countries" value="0" id="country_3" />C).. 6</p>
+                        <p><input type="radio" name="Q_countries" value="0" id="country_4" />D).. 5</p>
+                    </div> <!-- Container of every question -->
+                   <div class="inner-group">
+                        <h2> Question II</h2>
+                        <label for="cities">What is the size of float and double in java?</label><br>
+                        <p><input type="radio" name="Q_cities" value="2" id="cities_1" />A).. 64 and 32</p>
+                        <p><input type="radio" name="Q_cities" value="0" id="cities_2" />B).. 32 and 32</p>
+                        <p><input type="radio" name="Q_cities" value="5" id="cities_3" />C).. 32 and 64</p>
+                        <p><input type="radio" name="Q_cities" value="0" id="cities_4" />D).. 64 and 64</p>
+                    </div> <!-- Container of every question -->
+
+                    
+                    <div class="inner-group">
+                        <h2> Question III</h2>
+                        <label for="pixels">Find the output of the following code. <br>
+                            <code>
+                            int Integer = 24;<br>
+                            char String  = ‘I’;<br>
+                            System.out.print(Integer);<br>
+                            System.out.print(String);</code></label><br>
+                        <p><input type="radio" name="Q_pixels" value="0" id="pixel_1" />A).. I</p>
+                        <p><input type="radio" name="Q_pixels" value="5" id="pixel_2" />B).. 24 I</p>
+                        <p><input type="radio" name="Q_pixels" value="0" id="pixel_3" />C).. Compiler Error</p>
+                        <p><input type="radio" name="Q_pixels" value="0" id="pixel_4" />D).. Throws Exception</p>
+                    </div> <!-- Container of every question -->
+
+
+                    <div class="inner-group">
+                        <h2> Question IV</h2>
+                        <label for="planets">Find the output of the following program. <br><code>
+                                public class Solution{ <br>
+                                       public static void main(String[] args){ <br>
+                                                     short x = 10; <br>
+                                                     x =  x * 5; <br>
+                                                     System.out.print(x); <br>
+                                       } <br>
+                                } <br>
+                        </code></label><br>
+                        <p><input type="radio" name="Q_planets" value="0" id="planet_1" />A).. 10</p>
+                        <p><input type="radio" name="Q_planets" value="5" id="planet_2" />B).. Compile Error</p>
+                        <p><input type="radio" name="Q_planets" value="0" id="planet_3" />C).. 50</p>
+                        <p><input type="radio" name="Q_planets" value="0" id="planet_4" />D).. Exception</p>
+                    </div> <!-- Container of every question -->
+                    <div class="inner-group">
+                        <h2> Question V</h2>
+                        <label for="galaxy">Select the valid statement.</label><br>
+                            <select id="galaxy">
+                                <option disabled selected value="">-- Select Option --</option>
+                                <option value="0">char[] ch = new char(5)</option>
+                                <option value="0">char[] ch= new char{}</option>
+                                <option value="5">char[] ch = new char[5]</option>
+                        </select>
+                    </div>
+                </div> <!-- Questions group container -->
+                <div class="group">
+                    <div class="inner-group">
+                        <h2> Question VI</h2>
+                        <label for="time_to_mars">When an array is passed to a method, what does the method receive?</label><br>
+                            <select id="time_to_mars">
+                                    <option disabled selected value=" "> -- Select option -- </option>
+                                    <option value="0">Length of the array</option>
+                                    <option value="0">Acopy of the array/option>
+                                    <option value="5">The refference of the array</option>
+                                    
+                            </select>
+                    </div> <!-- Container of every question -->
+                   <div class="inner-group">
+                        <h2> Question VII</h2>
+                        <label for="earth">array in java are-</label><br>
+                        <p><input type="radio" name="Q_earth" value="0" id="earth_1" />A).. Object referance</p>
+                        <p><input type="radio" name="Q_earth" value="5" id="earth_2" />B).. Objects</p>
+                        <p><input type="radio" name="Q_earth" value="0" id="earth_3" />C).. none</p>
+                        <p><input type="radio" name="Q_earth" value="0" id="earth_4" />D).. Premitive Data types</p>
+                    </div> <!-- Container of every question -->
+                    <div class="inner-group">
+                        <h2> Question VIII</h2>
+                        <label for="mars">When is the object created with new keyword?</label><br>
+                        <p><input type="radio" name="Q_mars" value="0" id="mars_1" />A).. Compile time</p>
+                        <p><input type="radio" name="Q_mars" value="5" id="mars_2" />B).. At run time</p>
+                        <p><input type="radio" name="Q_mars" value="0" id="mars_3" />C).. Depends on the code</p>
+                        <p><input type="radio" name="Q_mars" value="0" id="mars_4" />D).. none</p>
+                    </div> <!-- Container of every question -->
+                    <div class="inner-group">
+                        <h2> Question IX</h2>
+                        <label for="planet_earth">
+                            Identify the keyword among the following that makes a variable belong to a class,rather than being defined for each instance of the class</label><br>
+                        <p><input type="radio" name="Q_planet_earth" value="0" id="planet_earth_1" />A).. final</p>
+                        <p><input type="radio" name="Q_planet_earth" value="5" id="planet_earth_2" />B).. Static</p>
+                        <p><input type="radio" name="Q_planet_earth" value="0" id="planet_earth_3" />C).. volatile</p>
+                        <p><input type="radio" name="Q_planet_earth" value="0" id="planet_earth_4" />D).. abstract</p>
+                    </div> <!-- Container of every question -->
+                    <div class="inner-group">
+                        <h2> Question X</h2>
+                        <label for="mass-earth-mars">in which of the following is toString() method defined?</label><br>
+                        <select id="mass-earth-mars">
+                                <option disabled selected value="">-- Select Option --</option>
+                                <option value="5">java.lang.Object</option>
+                                <option value="0">java.lang.string</option>
+                        </select>
+                    </div>
+                </div> <!-- Questions group container -->
+                <div class="group">
+                    <div class="inner-group">
+                        <h2> Question XI</h2>
+                        <label for="pop-world">toString() is defined in java.lang.Object.</label><br>
+                        <p><input type="radio" name="Q_pop_world" value="0" id="pop_world_1" />A).. True</p>
+                        <p><input type="radio" name="Q_pop_world" value="0" id="pop_world_2" />B).. False</p>
+                        <p><input type="radio" name="Q_pop_world" value="0" id="pop_world_3" />C).. none</p>
+                        <p><input type="radio" name="Q_pop_world" value="5" id="pop_world_4" />D).. An int value</p>
+                    </div> <!-- Container of every question -->
+                   <div class="inner-group">
+                        <h2> Question XII</h2>
+                        <label for="largest_cities">To which of the following does the class string belong to.</label><br>
+                        <p><input type="radio" name="Q_l_cities" value="5" id="l_cities_1" />A).. java.lang</p>
+                        <p><input type="radio" name="Q_l_cities" value="0" id="l_cities_2" />B).. java.awt</p>
+                        <p><input type="radio" name="Q_l_cities" value="0" id="l_cities_3" />C).. java.applet</p>
+                        <p><input type="radio" name="Q_l_cities" value="0" id="l_cities_4" />D).. java.string</p>
+                    </div> <!-- Container of every question -->
+                    <div class="inner-group">
+                        <h2> Question XIII</h2>
+                        <label for="oldest-city">Total constructor string class have?</label><br>
+                        <p><input type="radio" name="Q_o_city" value="5" id="o_city_1" />A).. 13</p>
+                        <p><input type="radio" name="Q_o_city" value="0" id="o_city_2" />B).. 3</p>
+                        <p><input type="radio" name="Q_o_city" value="0" id="o_city_3" />C).. 5</p>
+                        <p><input type="radio" name="Q_o_city" value="0" id="o_city_4" />D).. 14</p>
+                    </div> <!-- Container of every question -->
+                    <div class="inner-group">
+                        <h2> Question XIV</h2>
+                        <label for="balloun">Identify the return type of a method that does not return any value.</label><br>
+                        <p><input type="radio" name="Q_balloun" value="5" id="balloun_1" />A).. void</p>
+                        <p><input type="radio" name="Q_balloun" value="0" id="balloun_2" />B).. int</p>
+                        <p><input type="radio" name="Q_balloun" value="0" id="balloun_3" />C).. double</p>
+                        <p><input type="radio" name="Q_balloun" value="0" id="balloun_4" />D).. none</p>
+                    </div> <!-- Container of every question -->
+                    <div class="inner-group">
+                        <h2> Question XV</h2>
+                        <label for="math_1">Output of Math.floor(3.6)?</label><br>
+                        <input type="text" name="Q_math_1" placeholder="Enter your Answer" class="txt-f" id="math_1" />
+                    </div>
+                </div> <!-- Questions group container -->
+                <div class="group">
+                    <div class="inner-group">
+                        <h2> Question XVI</h2>
+                        <label for="math_2">Output of Math.seil(3.6)?</label><br>
+                        <input type="text" name="Q_math_2" placeholder="Enter your Answer" class="txt-f" id="math_2" />
+                    </div> <!-- Container of every question -->
+                   <div class="inner-group">
+                        <h2> Question XVII</h2>
+                        <label for="f_b">
+                            What is Runnable?</label><br>
+                       <select id="f_b">
+                                <option disabled selected value="">-- Select Option --</option>
+                                <option value="0">Abstract Class</option>
+                                <option value="0">method</option>
+                                <option value="5">interface</option>
+                        </select>
+                    </div> <!-- Container of every question -->
+                    <div class="inner-group">
+                        <h2> Question XVIII</h2>
+                        <label for="lang">Exception created by try block is caught in which block</label><br>
+                        <p><input type="radio" name="Q_lang" value="5" id="lang_1" />A).. catch</p>
+                        <p><input type="radio" name="Q_lang" value="0" id="lang_2" />B).. throw</p>
+                        <p><input type="radio" name="Q_lang" value="0" id="lang_3" />C).. final</p>
+                        <p><input type="radio" name="Q_lang" value="0" id="lang_4" />D).. none</p>
+                    </div> <!-- Container of every question -->
+                    <div class="inner-group">
+                        <h2> Question XIX</h2>
+                        <label for="football_1"> Where is System class defined?</label><br>
+                        <p><input type="radio" name="Q_football_1" value="5" id="footbal_1" />A).. java.lang.package</p>
+                        <p><input type="radio" name="Q_football_1" value="0" id="footbal_2" />B).. java.util.package</p>
+                        <p><input type="radio" name="Q_football_1" value="0" id="footbal_3" />C).. none</p>
+                        <p><input type="radio" name="Q_football_1" value="0" id="footbal_4" />D).. all of the above</p>
+                    </div> <!-- Container of every question -->
+                    <div class="inner-group">
+                        <h2> Question XX</h2>
+                        <label for="football_2">Identify the interface which is used to declare core methods in java?</label><br>
+                        <p><input type="radio" name="Q_football_2" value="0" id="football-1" />A).. Eventlistener</p>
+                        <p><input type="radio" name="Q_football_2" value="0" id="football-2" />B).. comparator</p>
+                        <p><input type="radio" name="Q_football_2" value="5" id="football-3" />C)..collection</p>
+                        <!-- <p><input type="radio" name="Q_football_2" value="5" id="football-4" />D).. Italy</p> -->
+                    </div> <!-- container of every question -->
+                </div> <!-- Questions group container -->
+            </div> <!-- wraper -->
+                <div id="total_result">
+                    <div class="second-container">
+                        <label for="estimate-result"></label>
+                    <input type="submit" name="estimate"  value="Click to Get your result" id="estimate-result" />
+                    </div> <!-- the container of the button -->
+                    <div id="final-result">
+                        <div id="result_1"><div id="result_side_1">
+                            <p id="name">Name:<span id="pname"></span></p>
+                            <p id="age">Age:<span id="page"></span></p>
+                            <p id="place">Place:<span id="pplace"></span></p>
+                            </div></div>
+                        <div id="result_2"><div id="show_result"><p id="cong"></p><p id="degr"></p></div></div>
+                        <div id="result_3"><div id="result_side_2">
+                            <p id="lineone"></p>
+                            <p id="linetwo"> Created By </p>
+                            <p id="linethree"><span id="crid">Department of MCA(CIT)</span></p>
+                            </div></div>
+                    </div>
+                </div> <!-- Result container -->
+        </form> <!-- the form contain all questions -->
+        </div>
+     <script src="exam.js"></script> 
+</body>
+</html>
